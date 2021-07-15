@@ -7,8 +7,8 @@ This assessment is to measure the candidate's knowledge with Git, test cases cre
 A simple native Android application that shows a list of cities which you can search and when you choose a city the app shows a pin on a map. Then you can go back and repeat the process.
 
 Prerequisites
-• Github account
-• Android Studio
+- Github account
+- Android Studio
 
 ## Deliverables:
 1. Create a series of testcases based on the application functionality. Make sure that you give detailed instructions for each test case (step preconditions, steps to execute test case, expected results, etc). You can use any format you prefer.
