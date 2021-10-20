@@ -1,6 +1,6 @@
 # Backbase Mobile QA Assignment
 
-## DescriptionDescription
+## Description
 This assessment is to measure the candidate's knowledge with Git, test cases creation, test reporting and the ability to adapt with automation tools.
 
 ## Application under test
@@ -22,13 +22,8 @@ All manual deliverables should be added to a "Reports" folder in root of project
 
 Once you are done,  push your test assignment to your fork. Please provide user **bb-qa** access to your fork and share a link to your fork when you are done with the assignment.
 
-
 **Bonus Question:**
 Part of the app functionality is currently not working. Fix it if you can.
-
-
-
-
 
 **NOTE:**
 If you need to take any assumptions please note them as part of your answers.
