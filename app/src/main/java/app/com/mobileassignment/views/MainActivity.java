@@ -3,7 +3,7 @@ package app.com.mobileassignment.views;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -16,10 +16,10 @@ import android.widget.ProgressBar;
 import java.util.Collections;
 import java.util.List;
 
-import app.com.mobileassignment.views.adapters.CityAdapter;
 import app.com.mobileassignment.R;
 import app.com.mobileassignment.model.City;
 import app.com.mobileassignment.utils.JsonMapper;
+import app.com.mobileassignment.views.adapters.CityAdapter;
 
 public class MainActivity extends AppCompatActivity implements TextWatcher, AdapterView.OnItemClickListener {
 

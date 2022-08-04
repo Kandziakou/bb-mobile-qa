@@ -1,0 +1,7 @@
+TO: test case #4
+SUMMARY: When you try to search cities by their countries, you get nothing as answer for request
+DESCRIPTION:
+1. Open app
+2. Type Country (e.g 'PL', 'CN', 'BR', etc) string from cities.json to search field
+Expected: showed list of cities from that Country and cities with that string as part of their names
+Result: showed ONLY cities with that string as part of their names
