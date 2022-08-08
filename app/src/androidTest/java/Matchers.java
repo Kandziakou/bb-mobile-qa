@@ -3,10 +3,11 @@ import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 
 public class Matchers {
-    public Matchers(){
+    public Matchers() {
 
     }
-    public  <T> Matcher<T> first(final Matcher<T> matcher) {
+
+    public <T> Matcher<T> first(final Matcher<T> matcher) {
         return new BaseMatcher<T>() {
             boolean isFirst = true;
 

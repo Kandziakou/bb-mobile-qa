@@ -1,31 +1,26 @@
-import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.typeText;
-import static androidx.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.matcher.ViewMatchers.isRoot;
 
-import java.util.concurrent.ThreadLocalRandom;
+import androidx.test.espresso.action.ViewActions;
 
-import app.com.MyApp;
-import app.com.mobileassignment.R;
-import app.com.mobileassignment.model.City;
-import app.com.mobileassignment.utils.JsonMapper;
 import io.qameta.allure.kotlin.Step;
 
 public class Steps {
-    @Step("Type '{cityName} to search field'")
-    public void searchCity(String cityName){
-        onView(withId(R.id.search)).perform(typeText(cityName));
+    MainPage mainPage = new MainPage();
+    @Step("Search by '{by}'")
+    public void searchCity(String by){
+        mainPage.getSearch().perform(typeText(by));
     }
 
     @Step("Select first city in list")
     public void clickOnFirstCity(){
-        onData(new Matchers().first(withId(R.id.cityName))).perform(click());
+        mainPage.getFirstCity().perform(click());
     }
 
-    @Step("Select random city from 'cities.json'")
-    public City selectRandomCity(){
-        int random = ThreadLocalRandom.current().nextInt(0, 209557);
-        return (City) new JsonMapper().getCityListFromRawFile(MyApp.getAppContext(), random);
+    @Step("Press BACK button")
+    public void pressBack(){
+        onView(isRoot()).perform(ViewActions.pressBack());
     }
 }
